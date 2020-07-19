@@ -4,6 +4,11 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import styled from "styled-components";
+
+const Test = styled.h1`
+  color: green;
+`;
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -21,6 +26,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <Test>Hello</Test>
         <p>Front-End Developer</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
