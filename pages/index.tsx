@@ -19,7 +19,15 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({
+  allPostsData,
+}: {
+  allPostsData: {
+    id: string;
+    date: string;
+    title: string;
+  }[];
+}) {
   return (
     <Layout home>
       <Head>
