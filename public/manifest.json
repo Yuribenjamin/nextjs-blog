@@ -1,0 +1,23 @@
+{
+  "name": "next-pwa",
+  "short_name": "next-pwa",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icons/remote-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/remote-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
